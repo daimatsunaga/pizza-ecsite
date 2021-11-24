@@ -69,7 +69,7 @@
             <form method="post" th:action="@{/login}">
               <fieldset>
                 <legend>ログイン</legend>
-                <label class="control-label" style="color: red" for="inputError"
+                <label th:text="${loginError}" style="color: red" for="inputError"
                   >メールアドレス、またはパスワードが間違っています</label
                 >
                 <div class="form-group">
